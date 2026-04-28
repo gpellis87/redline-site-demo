@@ -124,3 +124,62 @@ footer { background: var(--dark); padding: 56px 0 0; }
 .faq-item.open .faq-q { color: var(--red); }
 .faq-a { overflow: hidden; max-height: 0; transition: max-height .3s ease; }
 .faq-a-in { padding-bottom: 16px; font-size: 13.5px; color: var(--g500); line-height: 1.7; }
+
+/* ── Hamburger & Mobile Drawer ─────────────────────────────── */
+.hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; width: 36px; height: 36px; flex-shrink: 0; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--dark); border-radius: 2px; transition: transform .25s, opacity .2s; }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.nav-drawer { position: fixed; inset: 0; background: var(--white); z-index: 300; display: flex; flex-direction: column; transform: translateX(100%); transition: transform .28s cubic-bezier(.4,0,.2,1); overflow-y: auto; }
+.nav-drawer.open { transform: translateX(0); }
+.nav-drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 66px; border-bottom: 1px solid var(--g200); flex-shrink: 0; }
+.nav-drawer-close { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: var(--g100); border: none; border-radius: 8px; cursor: pointer; color: var(--dark); }
+.nav-drawer-links { display: flex; flex-direction: column; flex: 1; padding: 8px 0; }
+.nav-drawer-links a { padding: 16px 24px; font-size: 16px; font-weight: 500; color: var(--dark); border-bottom: 1px solid var(--g100); display: block; }
+.nav-drawer-links a:active { background: var(--g50); }
+.nav-drawer-foot { padding: 20px 24px 32px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--g200); }
+.nav-drawer-foot .btn { justify-content: center; font-size: 15px; }
+.nav-drawer-phone { font-size: 14px; font-weight: 700; color: var(--dark); text-align: center; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 0; }
+
+/* ── Mobile Media Queries ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .wrap { padding: 0 16px; }
+  .pad { padding: 56px 0; }
+  .h2 { font-size: 1.625rem; }
+
+  /* Topbar */
+  .topbar { font-size: 12px; gap: 8px; padding: 8px 16px; }
+  .topbar .sep { display: none; }
+  .topbar span:first-child { display: none; }
+
+  /* Nav */
+  .nav-links, .nav-right { display: none; }
+  .hamburger { display: flex; }
+  .nav { position: sticky; top: 0; z-index: 100; }
+  .nav-in { height: 58px; }
+  .logo img { height: 48px !important; }
+
+  /* Trust strip */
+  .trust-grid { grid-template-columns: 1fr 1fr; gap: 0; }
+  .trust-item { padding: 14px 16px; border-right: none; border-bottom: 1px solid var(--g200); }
+  .trust-item:nth-child(odd) { border-right: 1px solid var(--g200); }
+  .trust-item:nth-child(3), .trust-item:nth-child(4) { border-bottom: none; }
+
+  /* CTA band */
+  .cta-in { flex-direction: column; text-align: center; }
+  .cta-btns { justify-content: center; }
+  .cta-txt h3 { font-size: 1.2rem; }
+
+  /* Blog cards */
+  .blog-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .foot-grid > div:first-child { grid-column: 1 / -1; }
+  .foot-bot { flex-direction: column; text-align: center; gap: 8px; }
+
+  /* FAQ sidebar */
+  .faq-in { grid-template-columns: 1fr; gap: 24px; }
+}
