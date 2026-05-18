@@ -72,6 +72,7 @@ img { max-width: 100%; display: block; }
 .nav { background: var(--white); border-bottom: 1px solid var(--g200); position: sticky; top: 0; z-index: 100; box-shadow: var(--sh); transition: box-shadow .2s; }
 .nav-in { display: flex; align-items: center; justify-content: space-between; height: 66px; }
 .logo { display: flex; align-items: center; gap: 10px; flex-direction: row; }
+.logo-img { height: 56px; width: auto; display: block; }
 .logo-words { display: flex; flex-direction: column; line-height: 1.1; }
 .logo-top { font-size: 19px; font-weight: 800; letter-spacing: -.5px; color: var(--dark); }
 .logo-top em { font-style: normal; color: var(--red); }
@@ -189,7 +190,7 @@ footer { background: var(--dark); padding: 56px 0 0; }
   .hamburger { display: flex; }
   .nav { position: sticky; top: 0; z-index: 100; }
   .nav-in { height: 58px; }
-  .logo img { height: 48px !important; }
+  .logo-img { height: 46px; }
 
   /* Trust strip */
   .trust-grid { grid-template-columns: 1fr 1fr; gap: 0; }
