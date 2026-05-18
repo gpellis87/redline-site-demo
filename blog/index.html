@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Septic tips, maintenance guides, and local advice for homeowners in Union County, NC — from Redline Site Services.">
   <title>Septic Blog | Union County, NC | Redline Site Services</title>
+  <link rel="canonical" href="https://redlinesiteservices.com/blog/">
+  <link rel="icon" href="../assets/images/redline-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Redline Site Services">
+  <meta property="og:title" content="Septic Blog | Union County, NC | Redline Site Services">
+  <meta property="og:description" content="Septic tips, maintenance guides, and local advice for homeowners in Union County, NC — from Redline Site Services.">
+  <meta property="og:url" content="https://redlinesiteservices.com/blog/">
+  <meta property="og:image" content="https://redlinesiteservices.com/assets/images/redline-truck-rear.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Septic Blog | Union County, NC | Redline Site Services">
+  <meta name="twitter:description" content="Septic tips, maintenance guides, and local advice for homeowners in Union County, NC.">
+  <meta name="twitter:image" content="https://redlinesiteservices.com/assets/images/redline-truck-rear.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,18 +26,12 @@
     .blog-hero .eyebrow { color: #fca5a5; }
     .blog-hero .h2 { color: var(--white); font-size: 2.25rem; }
     .blog-hero .lead { color: rgba(255,255,255,.5); max-width: 560px; }
-    .blog-index-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 24px; }
-    .blog-index-grid .blog-card.featured { grid-column: 1; grid-row: 1 / 3; }
-    .blog-index-grid .blog-card.featured .blog-card-img-ph { aspect-ratio: auto; min-height: 260px; }
-    .pagination { display: flex; justify-content: center; gap: 8px; margin-top: 48px; }
-    .pg-btn { width: 38px; height: 38px; border: 1.5px solid var(--g200); border-radius: var(--r); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: var(--dark3); cursor: pointer; transition: all .15s; }
-    .pg-btn:hover, .pg-btn.active { background: var(--red); border-color: var(--red); color: var(--white); }
+    .blog-index-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
     .cat-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 28px; }
     .cat-btn { padding: 6px 16px; border-radius: 999px; border: 1.5px solid var(--g200); font-size: 13px; font-weight: 500; color: var(--g600); background: var(--white); cursor: pointer; transition: all .15s; }
     .cat-btn:hover, .cat-btn.active { border-color: var(--red); color: var(--red); background: #fef2f2; }
     @media (max-width: 768px) {
       .blog-index-grid { grid-template-columns: 1fr; }
-      .blog-index-grid .blog-card.featured { grid-column: auto; grid-row: auto; }
       .blog-hero { padding: 40px 0 32px; }
     }
   </style>
@@ -115,10 +121,8 @@
     <div class="blog-index-grid">
 
       <!-- Featured post -->
-      <article class="blog-card featured">
-        <div class="blog-card-img-ph">
-          <img src="../assets/images/redline-truck-rear.jpg" alt="Septic pumping truck in Monroe NC" class="blog-card-img" style="min-height:260px;">
-        </div>
+      <article class="blog-card">
+        <img src="../assets/images/redline-truck-rear.jpg" alt="Septic pumping truck in Monroe NC" class="blog-card-img">
         <div class="blog-card-body">
           <div class="blog-meta">
             <span class="blog-tag">Maintenance</span>
@@ -132,9 +136,7 @@
 
       <!-- Post 2 -->
       <article class="blog-card">
-        <div class="blog-card-img-ph">
-          <img src="../assets/images/septic-inspection-access.jpg" alt="Septic system warning signs" class="blog-card-img">
-        </div>
+        <img src="../assets/images/septic-inspection-access.jpg" alt="Septic system warning signs" class="blog-card-img">
         <div class="blog-card-body">
           <div class="blog-meta">
             <span class="blog-tag">Repair</span>
@@ -148,9 +150,7 @@
 
       <!-- Post 3 -->
       <article class="blog-card">
-        <div class="blog-card-img-ph">
-          <img src="../assets/images/drain-field-installation.jpg" alt="Home inspection septic system" class="blog-card-img">
-        </div>
+        <img src="../assets/images/drain-field-installation.jpg" alt="Septic inspection for home purchase" class="blog-card-img">
         <div class="blog-card-body">
           <div class="blog-meta">
             <span class="blog-tag">Inspections</span>
@@ -232,7 +232,6 @@
     </div>
     <div class="foot-bot">
       <span>&copy; 2026 Redline Site Services. All rights reserved. Built &amp; maintained by <a href="https://phillipellis.com" target="_blank" rel="noopener">Phillip Ellis</a>. Hosted by <a href="https://dave-enterprise.com" target="_blank" rel="noopener">Dave Enterprise</a>.</span>
-      <div><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
     </div>
   </div>
 </footer>
