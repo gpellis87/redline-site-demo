@@ -75,7 +75,7 @@ img { max-width: 100%; display: block; }
 .topbar .sep { opacity: .35; }
 
 /* Nav */
-.nav { background: var(--white); border-bottom: 1px solid var(--g200); position: sticky; top: 0; z-index: 100; box-shadow: var(--sh); transition: box-shadow .2s; overflow: hidden; }
+.nav { background: var(--white); border-bottom: 1px solid var(--g200); position: sticky; top: 0; z-index: 100; box-shadow: var(--sh); transition: box-shadow .2s; overflow: visible; }
 .nav-in { display: flex; align-items: center; justify-content: space-between; height: 136px; transition: height .3s ease; }
 .logo { display: flex; align-items: center; gap: 10px; flex-direction: row; }
 .logo-img { height: 126px; width: auto; display: block; transition: height .3s ease; }
