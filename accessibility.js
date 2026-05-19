@@ -21,14 +21,23 @@
     toggle.type = 'button';
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-controls', 'a11y-panel');
-    toggle.textContent = 'Accessibility';
+    toggle.setAttribute('aria-label', 'Accessibility options');
+    toggle.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v7"/><path d="M7 10h10"/><path d="M9 21l3-7 3 7"/></svg>';
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'a11y-backdrop';
 
     const panel = document.createElement('div');
     panel.className = 'a11y-panel';
     panel.id = 'a11y-panel';
     panel.setAttribute('aria-label', 'Accessibility options');
     panel.innerHTML = `
-      <h2>Accessibility Options</h2>
+      <div class="a11y-panel-head">
+        <h2>Accessibility</h2>
+        <button class="a11y-close" aria-label="Close accessibility panel">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
       <div class="a11y-controls">
         <button type="button" data-a11y="text">Larger text</button>
         <button type="button" data-a11y="contrast">High contrast</button>
@@ -38,7 +47,14 @@
       <p class="a11y-note">These settings are saved on this device.</p>
     `;
 
-    document.body.append(toggle, panel);
+    document.body.append(backdrop, panel, toggle);
+
+    function closePanel() {
+      panel.classList.remove('open');
+      backdrop.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
 
     function syncButtons() {
       panel.querySelector('[data-a11y="text"]').setAttribute('aria-pressed', String(settings.text));
@@ -48,8 +64,12 @@
 
     toggle.addEventListener('click', () => {
       const open = panel.classList.toggle('open');
+      backdrop.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
     });
+
+    backdrop.addEventListener('click', closePanel);
+    panel.querySelector('.a11y-close').addEventListener('click', closePanel);
 
     panel.addEventListener('click', (event) => {
       const button = event.target.closest('button[data-a11y]');
@@ -68,11 +88,7 @@
     });
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && panel.classList.contains('open')) {
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.focus();
-      }
+      if (event.key === 'Escape' && panel.classList.contains('open')) closePanel();
     });
 
     syncButtons();
