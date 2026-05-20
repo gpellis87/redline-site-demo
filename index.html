@@ -67,7 +67,6 @@
     .services-section { background: var(--g100); }
     .services-hd { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 16px; }
     .svc-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
-    .svc-grid > .svc-card:last-child { grid-column: 1 / -1; justify-self: center; width: calc((100% - 42px) / 4); }
     .svc-card { background: var(--white); border: 1px solid var(--g200); border-radius: var(--r-lg); padding: 22px; transition: all .2s; cursor: pointer; }
     .svc-card:hover { border-color: var(--red); box-shadow: var(--sh-md); transform: translateY(-2px); }
     .svc-icon { width: 46px; height: 46px; background: #fef2f2; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; color: var(--red); }
@@ -182,7 +181,6 @@
       /* Services */
       .svc-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
       .svc-card { padding: 16px; }
-      .svc-grid > .svc-card:last-child { width: calc((100% - 10px) / 2); }
       .services-hd { flex-direction: column; align-items: flex-start; gap: 12px; }
       /* Gallery */
       .gallery-grid { grid-template-columns: 1fr; }
@@ -207,7 +205,6 @@
     }
     @media (max-width: 480px) {
       .svc-grid { grid-template-columns: 1fr; }
-      .svc-grid > .svc-card:last-child { grid-column: auto; justify-self: stretch; width: 100%; }
       .foot-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -365,7 +362,6 @@
       <div class="svc-card"><div class="svc-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 15c2.5-4 5.5-4 8-1s5.5 3 8-1M4 19c2.5-4 5.5-4 8-1s5.5 3 8-1M4 8h16M6 5h12"/></svg></div><div class="svc-name">Drainage &amp; Excavation</div><div class="svc-desc">Drainage systems, grading, culvert pipe installation, and excavation support for wet yards, driveways, and site access.</div><a href="services/drainage-excavation.html" class="svc-link">Plan Drainage Work <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
       <div class="svc-card"><div class="svc-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><div class="svc-name">Tank Cleaning</div><div class="svc-desc">High-pressure water jetting removes hardened sludge from tank walls and baffles that standard pumping alone can't reach.</div><a href="#contact" class="svc-link">Schedule Cleaning <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
       <div class="svc-card"><div class="svc-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></div><div class="svc-name">Tank Replacement</div><div class="svc-desc">Full replacement for tanks with severe structural damage or repeated failures that repair can no longer solve.</div><a href="#contact" class="svc-link">Get a Quote <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
-      <div class="svc-card"><div class="svc-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div><div class="svc-name">Porta John Rental</div><div class="svc-desc">Portable restroom delivery and service for construction sites, events, and temporary needs while your system is offline.</div><a href="#contact" class="svc-link">Rent Now <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
     </div>
   </div>
 </section>
