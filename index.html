@@ -18,7 +18,7 @@
   <meta name="twitter:title" content="Septic Services in Monroe & Union County, NC | Redline">
   <meta name="twitter:description" content="Licensed septic pumping, repair, installation, replacement, inspections, and cleaning across Union County and nearby areas.">
   <meta name="twitter:image" content="https://redlinesiteservices.com/assets/images/redline-truck-rear.jpg">
-  <script type="application/ld+json">{"address":{"addressLocality":"Monroe","addressRegion":"NC","streetAddress":"7322 Pleasant Hill Church Road","postalCode":"28112","addressCountry":"US","@type":"PostalAddress"},"url":"https://redlinesiteservices.com","makesOffer":[{"@type":"Offer","itemOffered":{"name":"Septic Tank Installation","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Tank Replacement","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Inspection","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Tank Cleaning","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Emergency Septic Repair","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Maintenance","@type":"Service"}}],"@type":["LocalBusiness","SepticTankService"],"openingHoursSpecification":{"opens":"00:00","closes":"23:59","@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]},"name":"Redline Site Services","areaServed":["Union County, NC","Cabarrus County, NC","Mecklenburg County, NC","Anson County, NC"],"logo":"https://redlinesiteservices.com/assets/images/redline-logo.png","telephone":"+17045629922","@context":"https://schema.org","priceRange":"$$","hasCredential":"NC Septic License #9788","image":"https://redlinesiteservices.com/assets/images/redline-truck-rear.jpg","description":"Redline Site Services, located in Monroe, NC, provides septic tank installation, replacement, inspection, pumping, cleaning, emergency repair, and maintenance for residential and commercial properties throughout Union County and surrounding areas.","email":"redlinesiteservices@gmail.com"}</script>
+  <script type="application/ld+json">{"address":{"addressLocality":"Monroe","addressRegion":"NC","streetAddress":"7322 Pleasant Hill Church Road","postalCode":"28112","addressCountry":"US","@type":"PostalAddress"},"url":"https://redlinesiteservices.com","makesOffer":[{"@type":"Offer","itemOffered":{"name":"Septic Tank Installation","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Tank Replacement","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Inspection","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Tank Cleaning","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Emergency Septic Repair","@type":"Service"}},{"@type":"Offer","itemOffered":{"name":"Septic Maintenance","@type":"Service"}}],"@type":["LocalBusiness","SepticTankService"],"openingHoursSpecification":{"opens":"00:00","closes":"23:59","@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]},"name":"Redline Site Services","areaServed":["Union County, NC","Cabarrus County, NC","Mecklenburg County, NC","Anson County, NC"],"logo":"https://redlinesiteservices.com/assets/images/redline-logo.png","telephone":"+17045629922","@context":"https://schema.org","priceRange":"$$","hasCredential":"NC Septic License #9788","image":"https://redlinesiteservices.com/assets/images/redline-truck-rear.jpg","description":"Redline Site Services, located in Monroe, NC, provides septic tank installation, replacement, inspection, pumping, cleaning, emergency repair, and maintenance for residential and commercial properties throughout Union County and surrounding areas.","email":"redlinesiteservices@gmail.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"22","bestRating":"5"}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -67,6 +67,7 @@
     .services-section { background: var(--g100); }
     .services-hd { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 16px; }
     .svc-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+    .svc-grid > .svc-card:last-child { grid-column: 1 / -1; justify-self: center; width: calc((100% - 42px) / 4); }
     .svc-card { background: var(--white); border: 1px solid var(--g200); border-radius: var(--r-lg); padding: 22px; transition: all .2s; cursor: pointer; }
     .svc-card:hover { border-color: var(--red); box-shadow: var(--sh-md); transform: translateY(-2px); }
     .svc-icon { width: 46px; height: 46px; background: #fef2f2; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; color: var(--red); }
@@ -181,6 +182,7 @@
       /* Services */
       .svc-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
       .svc-card { padding: 16px; }
+      .svc-grid > .svc-card:last-child { width: calc((100% - 10px) / 2); }
       .services-hd { flex-direction: column; align-items: flex-start; gap: 12px; }
       /* Gallery */
       .gallery-grid { grid-template-columns: 1fr; }
@@ -205,6 +207,7 @@
     }
     @media (max-width: 480px) {
       .svc-grid { grid-template-columns: 1fr; }
+      .svc-grid > .svc-card:last-child { grid-column: auto; justify-self: stretch; width: 100%; }
       .foot-grid { grid-template-columns: 1fr; }
     }
   </style>
