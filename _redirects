@@ -1,0 +1,20 @@
+# Redline Site Services legacy SEO redirects for static hosts that support _redirects.
+
+/our-services/ /#services 301
+/contact-us/ /#contact 301
+/union-county/ /locations/union-county-nc.html 301
+/septic-tank-pumping-monroe-nc/ /services/septic-pumping.html 301
+/septic-tank-pumping-indian-trail-nc/ /locations/indian-trail-nc.html 301
+/septic-tank-pumping-albemarle-nc/ /services/septic-pumping.html 301
+/septic-tank-pumping-stanfield-nc/ /services/septic-pumping.html 301
+/septic-system-repair-monroe-nc/ /services/septic-repair.html 301
+/septic-system-repair-indian-trail-nc/ /services/septic-repair.html 301
+/septic-system-repair-mint-hill-nc/ /services/septic-repair.html 301
+/septic-system-repair-wesley-chapel-nc/ /services/septic-repair.html 301
+/how-much-does-it-cost-to-pump-a-septic-tank/ /blog/septic-pumping-schedule-union-county.html 301
+/what-happens-if-you-never-pump-your-septic-tank/ /blog/warning-signs-septic-system.html 301
+/what-to-do-when-your-septic-system-backs-up/ /services/emergency-septic-repair.html 301
+/how-often-fairview-nc-homes-need-septic-tank-pumping/ /blog/septic-pumping-schedule-union-county.html 301
+/how-skipping-septic-pumping-leads-emergencies-wallace-road/ /blog/warning-signs-septic-system.html 301
+/what-causes-riser-lid-damage-septic-tanks-fairview-nc/ /services/septic-repair.html 301
+/terms-and-conditions/ /terms-and-conditions/ 410
