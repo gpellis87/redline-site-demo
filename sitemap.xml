@@ -86,13 +86,13 @@
   </url>
   <url>
     <loc>https://redlinesiteservices.com/services/septic-pumping.html</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://redlinesiteservices.com/services/emergency-septic-repair.html</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -128,7 +128,7 @@
   </url>
   <url>
     <loc>https://redlinesiteservices.com/services/septic-tank-cleaning.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -236,13 +236,19 @@
   </url>
   <url>
     <loc>https://redlinesiteservices.com/locations/charlotte-nc.html</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://redlinesiteservices.com/locations/huntersville-nc.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://redlinesiteservices.com/services/septic-repair.html</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
