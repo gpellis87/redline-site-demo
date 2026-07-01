@@ -82,6 +82,12 @@
     .svc-body a { color: var(--red); text-decoration: underline; text-underline-offset: 2px; }
     .svc-hero-img { width: 100%; border-radius: var(--r-lg); margin-bottom: 32px; display: block; max-height: 400px; object-fit: cover; }
 
+    .cost-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 14px; }
+    .cost-table th { background: var(--dark); color: var(--white); font-weight: 700; padding: 11px 16px; text-align: left; font-size: 12.5px; text-transform: uppercase; letter-spacing: .5px; }
+    .cost-table td { padding: 11px 16px; border-bottom: 1px solid var(--g200); color: var(--g600); }
+    .cost-table tr:nth-child(even) td { background: var(--g50); }
+    .cost-table td:first-child { font-weight: 600; color: var(--dark); }
+
     .emerg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0 28px; }
     .emerg-item { background: #fef2f2; border: 1px solid rgba(220,38,38,.15); border-radius: var(--r); padding: 14px 16px; }
     .emerg-item-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
@@ -129,6 +135,8 @@
       .svc-sidebar { position: static; }
       .svc-page-hero h1 { font-size: 1.75rem; }
       .emerg-grid { grid-template-columns: 1fr; }
+      .cost-table { font-size: 12.5px; }
+      .cost-table th, .cost-table td { padding: 9px 10px; }
       .svc-footer-btns { flex-direction: column; }
       .svc-footer-btns .btn { justify-content: center; }
     }
@@ -142,7 +150,7 @@
 <nav class="nav" id="nav">
   <div class="wrap">
     <div class="nav-in">
-      <a href="/" class="logo"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img"></a>
+      <a href="/" class="logo"><picture><source srcset="../assets/images/redline-logo.webp" type="image/webp"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img" width="512" height="512"></picture></a>
       <div class="nav-links">
         <a href="../index.html#services">Services</a>
         <a href="../index.html#about">About</a>
@@ -165,7 +173,7 @@
 
 <div class="nav-drawer" id="nav-drawer">
   <div class="nav-drawer-head">
-    <a href="/" class="logo"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img"></a>
+    <a href="/" class="logo"><picture><source srcset="../assets/images/redline-logo.webp" type="image/webp"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img" width="512" height="512"></picture></a>
     <button class="nav-drawer-close" onclick="toggleDrawer()" aria-label="Close menu">
       <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
@@ -202,7 +210,7 @@
       Available 24 Hours · 7 Days a Week
     </div>
     <h1>Septic Tank &amp; System Repair in Monroe, NC, Union County &amp; the Charlotte Area</h1>
-    <p>Backups, odors, slow drains, broken lines, baffle problems, pump alarms, and soggy drain field areas all point to a septic system that needs real diagnosis. Redline repairs septic tanks and full septic systems throughout Monroe, Union County, and nearby NC communities.</p>
+    <p>Septic tank and system repair in Monroe, NC addresses backups, broken lines, baffle failures, pump alarms, and drain field issues — Redline diagnoses the actual cause first and provides a free estimate before any work begins. We repair septic tanks and full systems throughout Monroe, Union County, and nearby NC communities.</p>
     
   </div>
 </section>
@@ -212,7 +220,7 @@
     <div class="svc-layout">
 
       <div class="svc-body">
-        <img src="../assets/images/septic-line-repair.jpg" alt="Septic tank repair and line repair in Union County NC" class="svc-hero-img">
+        <picture><source srcset="../assets/images/septic-line-repair.webp" type="image/webp"><img fetchpriority="high" src="../assets/images/septic-line-repair.jpg" alt="Septic tank repair and line repair in Union County NC" class="svc-hero-img" width="765" height="1020"></picture>
 
         <h2>Septic Repair Problems We Handle</h2>
         <p>Septic repair covers a broad range of problems — from minor baffle and line issues to major excavation and drain field work. A slow drain may be the first sign of a clogged line, a damaged baffle, a full tank, or a drain field that is no longer accepting water correctly. Redline diagnoses the full system before recommending a repair, so you're not paying for work that doesn't address the actual cause.</p>
@@ -259,6 +267,17 @@
           <li><strong>Distribution box repair</strong> — Leveling or replacing a cracked distribution box can restore even flow to a drain field and extend its usable life significantly.</li>
           <li><strong>Drain field involvement</strong> — When the drain field itself is failing, costs increase substantially. Some situations allow for partial repair or rejuvenation; others require full replacement with a permitted new system.</li>
         </ul>
+        <table class="cost-table">
+          <thead><tr><th>Repair Type</th><th>Typical Timeframe</th><th>Cost Factor</th></tr></thead>
+          <tbody>
+            <tr><td>Baffle replacement</td><td>A few hours</td><td>Low — straightforward, minimal excavation</td></tr>
+            <tr><td>Tank lid, riser, or access repair</td><td>A few hours</td><td>Low — prevents infiltration, eases future service</td></tr>
+            <tr><td>Line or pipe repair</td><td>Half day to 1 day</td><td>Medium — depends on excavation depth and pipe length</td></tr>
+            <tr><td>Distribution box repair</td><td>Half day to 1 day</td><td>Medium — restores even drain field flow</td></tr>
+            <tr><td>Drain field involvement</td><td>1–2+ days, may require permit</td><td>High — partial repair vs. full replacement</td></tr>
+          </tbody>
+        </table>
+        <p>Redline provides a free estimate after inspecting the system — pricing above is a general reference for planning, not a quote.</p>
 
         <h2>Septic System Repair Across Union County, Cabarrus County &amp; the Charlotte Area</h2>
         <p>Septic tank repair and septic system repair are often used interchangeably, but they're not the same thing. <strong>Septic tank repair</strong> covers work on the tank structure itself — baffles, lids, risers, inlet or outlet connections, and cracking or corrosion. <strong>Septic system repair</strong> is broader: it includes the inlet line from the house, the outlet line to the distribution box, the distribution box itself, and the connections to the drain field.</p>

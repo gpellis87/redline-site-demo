@@ -69,6 +69,11 @@
     .loc-body strong { color: var(--dark); font-weight: 700; }
     .loc-body a { color: var(--red); text-decoration: underline; text-underline-offset: 2px; }
     .loc-hero-img { width: 100%; border-radius: var(--r-lg); margin-bottom: 32px; display: block; max-height: 400px; object-fit: cover; }
+    .cost-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 14px; }
+    .cost-table th { background: var(--dark); color: var(--white); font-weight: 700; padding: 11px 16px; text-align: left; font-size: 12.5px; text-transform: uppercase; letter-spacing: .5px; }
+    .cost-table td { padding: 11px 16px; border-bottom: 1px solid var(--g200); color: var(--g600); }
+    .cost-table tr:nth-child(even) td { background: var(--g50); }
+    .cost-table td:first-child { font-weight: 600; color: var(--dark); }
 
     .svc-links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 28px; }
     .svc-link-card { display: flex; align-items: center; gap: 12px; background: var(--g50); border: 1px solid var(--g200); border-radius: var(--r); padding: 14px 16px; text-decoration: none; transition: all .15s; }
@@ -107,6 +112,8 @@
       .loc-layout { grid-template-columns: 1fr; gap: 32px; padding: 40px 0; }
       .loc-sidebar { position: static; }
       .loc-hero h1 { font-size: 1.75rem; }
+      .cost-table { font-size: 12.5px; }
+      .cost-table th, .cost-table td { padding: 9px 10px; }
       .svc-links-grid, .city-service-grid { grid-template-columns: 1fr; }
       .loc-footer-btns { flex-direction: column; }
       .loc-footer-btns .btn { justify-content: center; }
@@ -119,7 +126,7 @@
 <nav class="nav" id="nav">
   <div class="wrap">
     <div class="nav-in">
-      <a href="/" class="logo"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img"></a>
+      <a href="/" class="logo"><picture><source srcset="../assets/images/redline-logo.webp" type="image/webp"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img" width="512" height="512"></picture></a>
       <div class="nav-links">
         <a href="../index.html#services">Services</a>
         <a href="../index.html#about">About</a>
@@ -141,7 +148,7 @@
 </nav>
 <div class="nav-drawer" id="nav-drawer">
   <div class="nav-drawer-head">
-    <a href="/" class="logo"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img"></a>
+    <a href="/" class="logo"><picture><source srcset="../assets/images/redline-logo.webp" type="image/webp"><img src="../assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img" width="512" height="512"></picture></a>
     <button class="nav-drawer-close" onclick="toggleDrawer()" aria-label="Close menu">
       <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
@@ -180,7 +187,7 @@
   <div class="wrap">
     <div class="loc-layout">
       <div class="loc-body">
-        <img src="../assets/images/redline-pump-truck.jpg" alt="Septic service in Stallings NC by Redline Site Services" class="loc-hero-img">
+        <picture><source srcset="../assets/images/redline-pump-truck.webp" type="image/webp"><img fetchpriority="high" src="../assets/images/redline-pump-truck.jpg" alt="Septic service in Stallings NC by Redline Site Services" class="loc-hero-img" width="2048" height="1536"></picture>
 
         <h2>Septic Services We Provide in Stallings</h2>
         <p>We serve Stallings homeowners with routine pumping, tank cleaning, real estate inspections, drain field repair, and urgent septic response.</p>
@@ -236,6 +243,16 @@
 
         <h2>Septic Repair in Stallings, NC</h2>
         <p>Backups, sewage odors, gurgling fixtures, broken lines, and wet drain field areas need diagnosis before repair. Redline serves Stallings with septic tank repair, line repair, emergency response, and drain field troubleshooting.</p>
+        <h2>Quick Facts</h2>
+        <table class="cost-table">
+          <thead><tr><th>Factor</th><th>Detail</th></tr></thead>
+          <tbody>
+            <tr><td>Septic Pumping Cost</td><td>$250 – $450 flat rate, no deposit required</td></tr>
+            <tr><td>Same-Day Scheduling</td><td>Available for most routine and non-emergency calls</td></tr>
+            <tr><td>Know if you're on sewer or septic</td><td>If your utility bill has no sewer charge, your property may rely on a private system.</td></tr>
+          </tbody>
+        </table>
+
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
           <div class="faq-item">
