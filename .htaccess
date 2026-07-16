@@ -34,6 +34,15 @@ RedirectMatch 301 ^/septic-tank-installation-([a-z0-9-]+)/?$ https://redlinesite
 Redirect 301 /septic-system-repair-marshville-nc/ https://redlinesiteservices.com/services/septic-repair.html
 RedirectMatch 301 ^/midland/?$ https://redlinesiteservices.com/locations/midland-nc.html
 
+# Migrated from server-only nginx rules (July 2026)
+Redirect 301 /monroe/ https://redlinesiteservices.com/locations/monroe-nc.html
+Redirect 301 /waxhaw/ https://redlinesiteservices.com/locations/waxhaw-nc.html
+Redirect 301 /mineral-springs/ https://redlinesiteservices.com/locations/mineral-springs-nc.html
+Redirect 301 /septic-system-inspection-mineral-springs-nc/ https://redlinesiteservices.com/locations/mineral-springs-nc.html
+Redirect 301 /septic-system-inspection-matthews-nc/ https://redlinesiteservices.com/locations/matthews-nc.html
+Redirect 301 /what-north-carolina-law-requires-septic-system-inspections/ https://redlinesiteservices.com/blog/what-nc-law-requires-septic-inspections.html
+Redirect 301 /sitemap_index.xml https://redlinesiteservices.com/sitemap.xml
+
 # Old-site utility pages
 RedirectMatch 301 ^/home/?$ https://redlinesiteservices.com/
 RedirectMatch 301 ^/septic-tank-services/?$ https://redlinesiteservices.com/#services

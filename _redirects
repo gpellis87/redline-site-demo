@@ -34,6 +34,15 @@
 /septic-system-repair-marshville-nc/ /services/septic-repair.html 301
 /midland/ /locations/midland-nc.html 301
 
+# Migrated from server-only nginx rules (July 2026)
+/monroe/ /locations/monroe-nc.html 301
+/waxhaw/ /locations/waxhaw-nc.html 301
+/mineral-springs/ /locations/mineral-springs-nc.html 301
+/septic-system-inspection-mineral-springs-nc/ /locations/mineral-springs-nc.html 301
+/septic-system-inspection-matthews-nc/ /locations/matthews-nc.html 301
+/what-north-carolina-law-requires-septic-system-inspections/ /blog/what-nc-law-requires-septic-inspections.html 301
+/sitemap_index.xml /sitemap.xml 301
+
 # Old-site utility pages
 /home / 301
 /septic-tank-services /#services 301
