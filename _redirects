@@ -1,10 +1,12 @@
 # Redline Site Services legacy SEO redirects for static hosts that support _redirects.
+# First match wins — keep exact rules above wildcard rules.
+# /septic-tank-pumping-indian-trail-nc/ is intentionally NOT redirected —
+# a real landing page now lives at that path.
 
 /our-services/ /#services 301
 /contact-us/ /#contact 301
 /union-county/ /locations/union-county-nc.html 301
 /septic-tank-pumping-monroe-nc/ /services/septic-pumping.html 301
-/septic-tank-pumping-indian-trail-nc/ /locations/indian-trail-nc.html 301
 /septic-tank-pumping-albemarle-nc/ /services/septic-pumping.html 301
 /septic-tank-pumping-stanfield-nc/ /services/septic-pumping.html 301
 /how-much-does-it-cost-to-pump-a-septic-tank/ /blog/septic-pumping-schedule-union-county.html 301
@@ -14,3 +16,24 @@
 /how-skipping-septic-pumping-leads-emergencies-wallace-road/ /blog/warning-signs-septic-system.html 301
 /what-causes-riser-lid-damage-septic-tanks-fairview-nc/ /services/septic-repair.html 301
 /terms-and-conditions/ /terms-and-conditions/ 410
+
+# Old-site /service-area/<slug>/ pages map 1:1 onto /locations/<slug>.html
+/service-area/:slug /locations/:slug.html 301
+
+# Old-site root-level service pages still indexed by Google
+/septic-excavation/ /services/drainage-excavation.html 301
+/drainage-management/ /services/drainage-excavation.html 301
+/drainage-excavation/ /services/drainage-excavation.html 301
+/excavation-contractor/ /services/drainage-excavation.html 301
+/septic-tank-pumping/ /services/septic-pumping.html 301
+/septic-tank-cleaning/ /services/septic-tank-cleaning.html 301
+
+# Old-site city/service combo pages (exact rule before wildcard)
+/septic-tank-installation-stallings-nc/ /septic-system-installation-stallings-nc/ 301
+/septic-tank-installation-* /services/septic-installation.html 301
+/septic-system-repair-marshville-nc/ /services/septic-repair.html 301
+/midland/ /locations/midland-nc.html 301
+
+# Old-site utility pages
+/home / 301
+/septic-tank-services /#services 301

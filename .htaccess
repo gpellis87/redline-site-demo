@@ -1,11 +1,12 @@
 # Redline Site Services legacy SEO redirects.
 # Keep these above any future catch-all rewrite rules.
+# /septic-tank-pumping-indian-trail-nc/ is intentionally NOT redirected —
+# a real landing page now lives at that path.
 
 Redirect 301 /our-services/ https://redlinesiteservices.com/#services
 Redirect 301 /contact-us/ https://redlinesiteservices.com/#contact
 Redirect 301 /union-county/ https://redlinesiteservices.com/locations/union-county-nc.html
 Redirect 301 /septic-tank-pumping-monroe-nc/ https://redlinesiteservices.com/services/septic-pumping.html
-Redirect 301 /septic-tank-pumping-indian-trail-nc/ https://redlinesiteservices.com/locations/indian-trail-nc.html
 Redirect 301 /septic-tank-pumping-albemarle-nc/ https://redlinesiteservices.com/services/septic-pumping.html
 Redirect 301 /septic-tank-pumping-stanfield-nc/ https://redlinesiteservices.com/services/septic-pumping.html
 Redirect 301 /how-much-does-it-cost-to-pump-a-septic-tank/ https://redlinesiteservices.com/blog/septic-pumping-schedule-union-county.html
@@ -15,3 +16,24 @@ Redirect 301 /how-often-fairview-nc-homes-need-septic-tank-pumping/ https://redl
 Redirect 301 /how-skipping-septic-pumping-leads-emergencies-wallace-road/ https://redlinesiteservices.com/blog/warning-signs-septic-system.html
 Redirect 301 /what-causes-riser-lid-damage-septic-tanks-fairview-nc/ https://redlinesiteservices.com/services/septic-repair.html
 Redirect gone /terms-and-conditions/
+
+# Old-site /service-area/<slug>/ pages map 1:1 onto /locations/<slug>.html
+RedirectMatch 301 ^/service-area/([a-z0-9-]+)/?$ https://redlinesiteservices.com/locations/$1.html
+
+# Old-site root-level service pages still indexed by Google
+Redirect 301 /septic-excavation/ https://redlinesiteservices.com/services/drainage-excavation.html
+Redirect 301 /drainage-management/ https://redlinesiteservices.com/services/drainage-excavation.html
+Redirect 301 /drainage-excavation/ https://redlinesiteservices.com/services/drainage-excavation.html
+Redirect 301 /excavation-contractor/ https://redlinesiteservices.com/services/drainage-excavation.html
+RedirectMatch 301 ^/septic-tank-pumping/?$ https://redlinesiteservices.com/services/septic-pumping.html
+RedirectMatch 301 ^/septic-tank-cleaning/?$ https://redlinesiteservices.com/services/septic-tank-cleaning.html
+
+# Old-site city/service combo pages (exact rule before wildcard)
+RedirectMatch 301 ^/septic-tank-installation-stallings-nc/?$ https://redlinesiteservices.com/septic-system-installation-stallings-nc/
+RedirectMatch 301 ^/septic-tank-installation-([a-z0-9-]+)/?$ https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /septic-system-repair-marshville-nc/ https://redlinesiteservices.com/services/septic-repair.html
+RedirectMatch 301 ^/midland/?$ https://redlinesiteservices.com/locations/midland-nc.html
+
+# Old-site utility pages
+RedirectMatch 301 ^/home/?$ https://redlinesiteservices.com/
+RedirectMatch 301 ^/septic-tank-services/?$ https://redlinesiteservices.com/#services

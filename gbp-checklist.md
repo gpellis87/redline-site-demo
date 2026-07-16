@@ -2,7 +2,9 @@
 
 Off-site work to pair with the on-site schema/entity changes. This is the highest-leverage lever for the "near me" pumping queries (they're won in the map pack, not organic).
 
-## Profile setup
+> **Status July 2026:** Profile setup is complete (all items below verified done). The ongoing work — reviews, posts, photos, citations — is now the entire game. GSC shows "near me" queries at position 11–20 organically; the map pack above those results is won by profile activity and review velocity, not the website.
+
+## Profile setup — ✅ DONE
 - [ ] Primary category: **Septic system service**
 - [ ] Secondary categories (as applicable): Septic tank plumber, Excavating contractor, Drainage service, Grading contractor
 - [ ] Business name matches site exactly: **Redline Site Services** (do not add keywords to the GBP name — against Google guidelines and risks suspension)
@@ -31,6 +33,13 @@ Seed the Q&A section with the same questions already answered in the site's FAQP
 - [ ] Weekly GBP Posts — repurpose blog content (14 existing posts at `/blog/`) into short GBP updates with a link back to the matching post/service page
 - [ ] Add photos regularly (trucks, crew, before/after job photos) — GBP rewards profile activity
 - [ ] Verify NAP matches across major directories (Yelp, BBB, Angi, Nextdoor, Facebook) — the site's Facebook (facebook.com/profile.php?id=100083018242700) should show identical name/address/phone
+
+## Weekly cadence (the part that moves map-pack rank now)
+
+1. **Monday:** publish one GBP post repurposed from a blog article (15 posts available at `/blog/` — rotate through them), linking to the matching service or blog page.
+2. **After every completed job:** send the review link by text before leaving the driveway. Target 2–4 new reviews/week; respond to each within 48 hours.
+3. **Monthly:** upload 3–5 fresh job photos (trucks on site, tank installs, before/after drainage work).
+4. **Quarterly:** re-verify NAP consistency on Yelp, BBB, Angi, Nextdoor, and Facebook, and update the site's `aggregateRating` schema to match the live GBP review count.
 
 ## Why this matters
 The GSC data shows "near me" pumping queries (860, 727, 716 impressions/week) ranking position 50–86 despite the site's organic content being solid. These terms are dominated by the Google Maps 3-pack, which is driven by GBP proximity, relevance, and prominence signals — not by the website's on-page SEO. The site-side schema changes (sameAs, geo, NAP consistency) help Google connect the website to this profile, but the profile itself — categories, reviews, service list, posting activity — is what actually moves map-pack position.
