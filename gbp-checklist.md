@@ -10,7 +10,7 @@ Off-site work to pair with the on-site schema/entity changes. This is the highes
 - [ ] Business name matches site exactly: **Redline Site Services** (do not add keywords to the GBP name — against Google guidelines and risks suspension)
 - [ ] Add all 12 services to the GBP "Services" section, matching the site's service names:
   Septic Tank Pumping, Emergency Septic Repair, Septic System Installation, Septic Inspections, Drain Field Repair, Septic Tank Cleaning, Septic Tank Replacement, Septic Maintenance, Septic Line Repair, Drainage & Excavation, Porta John Rental
-- [ ] Service area set to the 15 city pages + 4 counties (match `locations/` exactly): Monroe, Charlotte, Indian Trail, Waxhaw, Matthews, Mint Hill, Wesley Chapel, Stallings, Concord, Kannapolis, Harrisburg, Huntersville, Midland, Lake Park, Mineral Springs; Union/Cabarrus/Mecklenburg/Anson Counties
+- [ ] Service area set to the 17 city pages + 4 counties (match `locations/` exactly): Monroe, Charlotte, Indian Trail, Waxhaw, Matthews, Mint Hill, Wesley Chapel, Stallings, Concord, Kannapolis, Harrisburg, Huntersville, Midland, Lake Park, Mineral Springs, Weddington, Marvin, Unionville; Union/Cabarrus/Mecklenburg/Anson Counties
 - [ ] Website link → https://redlinesiteservices.com/
 - [ ] Phone matches exactly: (704) 562-9922
 - [ ] Address matches exactly: 7322 Pleasant Hill Church Road, Monroe, NC 28112

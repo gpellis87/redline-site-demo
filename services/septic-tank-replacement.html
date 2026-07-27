@@ -22,7 +22,8 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://redlinesiteservices.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://redlinesiteservices.com/#services"},{"@type":"ListItem","position":3,"name":"Septic Tank Replacement","item":"https://redlinesiteservices.com/services/septic-tank-replacement.html"}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../style.css">
   <style>
     .page-hero { background: var(--dark); padding: 56px 0 48px; color: var(--white); }
@@ -227,5 +228,15 @@
   </div>
 </footer>
 <script src="../accessibility.js" defer></script>
+<script>
+  function toggleDrawer() {
+    const drawer = document.getElementById('nav-drawer');
+    const burger = document.getElementById('hamburger');
+    const open = drawer.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { const d = document.getElementById('nav-drawer'); if (d && d.classList.contains('open')) toggleDrawer(); } });
+</script>
 </body>
 </html>
