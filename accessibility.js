@@ -30,6 +30,7 @@
     const panel = document.createElement('div');
     panel.className = 'a11y-panel';
     panel.id = 'a11y-panel';
+    panel.setAttribute('role', 'region');
     panel.setAttribute('aria-label', 'Accessibility options');
     panel.innerHTML = `
       <div class="a11y-panel-head">

@@ -54,7 +54,7 @@ img { max-width: 100%; display: block; }
 
 .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 .pad { padding: 80px 0; }
-.eyebrow { display: inline-block; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--red); margin-bottom: 10px; }
+.eyebrow { display: inline-block; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--red-h); margin-bottom: 10px; }
 .h2 { font-size: 2rem; font-weight: 800; color: var(--dark); line-height: 1.15; letter-spacing: -.5px; margin-bottom: 14px; }
 .lead { font-size: 1.0625rem; color: var(--g500); line-height: 1.7; }
 
@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
 .cta-band { background: var(--red); padding: 44px 0; }
 .cta-in { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .cta-txt h3 { font-size: 1.375rem; font-weight: 800; letter-spacing: -.3px; color: var(--white); margin-bottom: 4px; }
-.cta-txt p { font-size: 14.5px; color: rgba(255,255,255,.75); }
+.cta-txt p { font-size: 14.5px; color: #fff; }
 .cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
 
 /* Featured review pull quote */
@@ -126,7 +126,7 @@ img { max-width: 100%; display: block; }
 .blog-card-img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; display: block; }
 .blog-card-body { padding: 20px; }
 .blog-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-.blog-tag { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--red); background: #fef2f2; padding: 3px 9px; border-radius: 999px; }
+.blog-tag { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--red-h); background: #fef2f2; padding: 3px 9px; border-radius: 999px; }
 .blog-date { font-size: 12px; color: var(--g400); }
 .blog-card-title { font-size: 15px; font-weight: 700; color: var(--dark); line-height: 1.35; margin-bottom: 10px; }
 .blog-card-title a:hover { color: var(--red); }
@@ -138,7 +138,7 @@ img { max-width: 100%; display: block; }
 footer { background: var(--dark); padding: 56px 0 0; }
 .foot-grid { display: grid; grid-template-columns: 2fr 1fr 2fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.07); }
 .foot-brand { font-size: 17px; font-weight: 800; color: var(--white); margin-bottom: 2px; }
-.foot-brand em { font-style: normal; color: var(--red); }
+.foot-brand em { font-style: normal; color: #f87171; }
 .foot-lic { font-size: 11px; color: rgba(255,255,255,.55); margin-bottom: 14px; }
 .foot-desc { font-size: 13px; color: rgba(255,255,255,.55); line-height: 1.65; margin-bottom: 18px; }
 .foot-ci { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: rgba(255,255,255,.55); margin-bottom: 7px; }

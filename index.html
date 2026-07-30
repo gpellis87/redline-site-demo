@@ -41,7 +41,7 @@
     .hero > .wrap { position: relative; z-index: 1; }
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
     .hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 20px; color: var(--white); }
-    .hero h1 em { font-style: normal; color: var(--red); }
+    .hero h1 em { font-style: normal; color: #f87171; }
     .hero-sub { font-size: 1.0625rem; color: rgba(255,255,255,.7); line-height: 1.7; margin-bottom: 32px; max-width: 480px; }
     .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
     .hero-creds { display: flex; gap: 18px; flex-wrap: wrap; }
@@ -144,8 +144,8 @@
     .reviews-hd { text-align:center; margin-bottom:40px; }
     .reviews-hd .lead { max-width:500px; margin:0 auto; }
     .google-rating { display:inline-flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--g200); border-radius:999px; padding:8px 18px; margin-top:16px; }
-    .gr-logo { font-size:13px; font-weight:700; color:#4285f4; letter-spacing:-.3px; }
-    .gr-logo span:nth-child(2){color:#ea4335} .gr-logo span:nth-child(3){color:#fbbc05} .gr-logo span:nth-child(4){color:#4285f4} .gr-logo span:nth-child(5){color:#34a853} .gr-logo span:nth-child(6){color:#ea4335}
+    .gr-logo { font-size:13px; font-weight:700; color:#1a56c4; letter-spacing:-.3px; }
+    .gr-logo span:nth-child(2){color:#c62f22} .gr-logo span:nth-child(3){color:#946200} .gr-logo span:nth-child(4){color:#1a56c4} .gr-logo span:nth-child(5){color:#1a7a36} .gr-logo span:nth-child(6){color:#c62f22}
     .gr-stars { color:#92620a; font-size:14px; letter-spacing:1px; }
     .gr-count { font-size:12.5px; color:var(--g400); font-weight:500; }
     .reviews-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
@@ -162,7 +162,7 @@
     .review-more:hover { color:var(--red-h); }
     .review-source { display:flex; align-items:center; gap:6px; padding-top:10px; border-top:1px solid var(--g100); }
     .review-g-icon { font-size:11px; font-weight:800; letter-spacing:-.2px; }
-    .review-g-icon span:nth-child(1){color:#4285f4} .review-g-icon span:nth-child(2){color:#ea4335} .review-g-icon span:nth-child(3){color:#fbbc05} .review-g-icon span:nth-child(4){color:#4285f4} .review-g-icon span:nth-child(5){color:#34a853} .review-g-icon span:nth-child(6){color:#ea4335}
+    .review-g-icon span:nth-child(1){color:#1a56c4} .review-g-icon span:nth-child(2){color:#c62f22} .review-g-icon span:nth-child(3){color:#946200} .review-g-icon span:nth-child(4){color:#1a56c4} .review-g-icon span:nth-child(5){color:#1a7a36} .review-g-icon span:nth-child(6){color:#c62f22}
     .review-verified { font-size:11px; color:var(--g400); }
     .reviews-cta { text-align:center; margin-top:32px; }
 
@@ -493,7 +493,7 @@
           <input type="hidden" name="access_key" value="dbdf8041-3740-48c9-a3b3-592b5b3cf99f">
           <input type="hidden" name="subject" value="New service request from Redline Site Services website">
           <input type="hidden" name="from_name" value="Redline Site Services Website">
-          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="fg">
             <div class="ff"><label for="contact-name">Full Name</label><input id="contact-name" name="name" type="text" placeholder="John Smith" autocomplete="name" required></div>
             <div class="ff"><label for="contact-phone">Phone Number</label><input id="contact-phone" name="phone" type="tel" placeholder="(704) 555-0000" autocomplete="tel" required></div>
@@ -561,7 +561,7 @@
     { name:"Arturo Ochoa",     date:"a year ago",    text:"Thanks Steve, great job on my septic tank project! Very professional and excellent service. I'll definitely keep you in mind for my future projects." }
   ];
 
-  const AVATAR_COLORS = ['#1a73e8','#0f9d58','#e8710a','#7b1fa2','#00796b','#c2185b','#1558d6','#558b2f'];
+  const AVATAR_COLORS = ['#1a73e8','#0b7d46','#b35a08','#7b1fa2','#00796b','#c2185b','#1558d6','#45711f'];
   function avatarColor(name) { return AVATAR_COLORS[name.charCodeAt(0) % AVATAR_COLORS.length]; }
   function initials(name) { return name.split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase(); }
   function shuffle(arr) { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
