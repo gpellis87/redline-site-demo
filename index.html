@@ -97,12 +97,12 @@
     /* Areas */
     .areas-section { background: var(--dark); color: var(--white); }
     .areas-hd .h2 { color: var(--white); }
-    .areas-hd .lead { color: rgba(255,255,255,.45); }
+    .areas-hd .lead { color: rgba(255,255,255,.5); }
     .areas-hd { margin-bottom: 44px; }
     .areas-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
     .county-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: var(--r-lg); padding: 22px; }
-    .county-label { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--red); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
-    .county-label a { color: var(--red); text-decoration: none; }
+    .county-label { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #f87171; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .county-label a { color: #f87171; text-decoration: none; }
     .county-label a:hover { color: #fca5a5; }
     .county-label::after { content:''; flex:1; height:1px; background:rgba(255,255,255,.07); }
     .tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -132,8 +132,8 @@
     .ff { display: flex; flex-direction: column; gap: 5px; }
     .ff.full { grid-column: 1/-1; }
     .ff label { font-size: 12px; font-weight: 600; color: var(--dark3); }
-    .ff input,.ff select,.ff textarea { width:100%; padding:10px 13px; border:1.5px solid var(--g200); border-radius:var(--r); font-family:var(--font); font-size:13.5px; color:var(--dark); background:var(--white); outline:none; transition:border-color .15s; }
-    .ff input:focus,.ff select:focus,.ff textarea:focus { border-color:var(--red); }
+    .ff input,.ff select,.ff textarea { width:100%; padding:10px 13px; border:1.5px solid var(--g200); border-radius:var(--r); font-family:var(--font); font-size:13.5px; color:var(--dark); background:var(--white); transition:border-color .15s; }
+    .ff input:focus-visible,.ff select:focus-visible,.ff textarea:focus-visible { border-color:var(--red); outline:2px solid var(--red); outline-offset:1px; }
     .ff textarea { resize:vertical; min-height:96px; }
     .f-sub { width:100%; margin-top:4px; padding:13px; font-size:15px; }
     .form-success { display:none; text-align:center; padding:40px 20px; }
@@ -223,7 +223,7 @@
 <nav class="nav" id="nav">
   <div class="wrap">
     <div class="nav-in">
-      <a href="#" class="logo">
+      <a href="/" class="logo">
         <picture><source srcset="assets/images/redline-logo.webp" type="image/webp"><img src="assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img" width="512" height="512"></picture>
       </a>
       <div class="nav-links">
@@ -251,7 +251,7 @@
 
 <div class="nav-drawer" id="nav-drawer">
   <div class="nav-drawer-head">
-    <a href="#" class="logo" onclick="toggleDrawer()">
+    <a href="/" class="logo" onclick="toggleDrawer()">
       <picture><source srcset="assets/images/redline-logo.webp" type="image/webp"><img src="assets/images/redline-logo.png" alt="Redline Site Services" class="logo-img" width="512" height="512"></picture>
     </a>
     <button class="nav-drawer-close" onclick="toggleDrawer()" aria-label="Close menu">
@@ -276,8 +276,9 @@
   </div>
 </div>
 
+<main id="main-content">
 <section class="hero" id="home">
-  <div class="wrap" id="main-content">
+  <div class="wrap">
     <div class="hero-grid">
       <div>
 
@@ -514,6 +515,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
