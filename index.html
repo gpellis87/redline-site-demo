@@ -214,9 +214,9 @@
 
 <div class="topbar">
   <span>24/7 Emergency Septic Service Available</span>
-  <span class="sep">|</span>
+  <span class="sep" aria-hidden="true">|</span>
   <a href="#contact">Request Service &rarr;</a>
-  <span class="sep">|</span>
+  <span class="sep" aria-hidden="true">|</span>
   <span>Licensed &amp; Insured · Septic Lic. #9788 · GC Lic. #109441</span>
 </div>
 
@@ -671,6 +671,19 @@
   }
   const contactForm = document.getElementById('contact-form');
   if (contactForm) contactForm.addEventListener('submit', submitForm);
+  (function () {
+    const captchaEl = document.querySelector('.h-captcha');
+    if (!captchaEl) return;
+    const hideResponseField = () => {
+      const ta = captchaEl.querySelector('textarea[name="h-captcha-response"]');
+      if (ta && !ta.hasAttribute('aria-hidden')) {
+        ta.setAttribute('aria-hidden', 'true');
+        ta.setAttribute('tabindex', '-1');
+      }
+    };
+    hideResponseField();
+    new MutationObserver(hideResponseField).observe(captchaEl, { childList: true, subtree: true });
+  })();
   function toggleDrawer() {
     const drawer = document.getElementById('nav-drawer');
     const burger = document.getElementById('hamburger');

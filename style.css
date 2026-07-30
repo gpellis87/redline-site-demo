@@ -73,7 +73,7 @@ img { max-width: 100%; display: block; }
 /* Top bar */
 .topbar { background: var(--red); color: var(--white); text-align: center; padding: 9px 24px; font-size: 13px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
 .topbar a { color: var(--white); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
-.topbar .sep { opacity: .35; }
+.topbar .sep { opacity: 1; }
 
 /* Nav */
 .nav { background: var(--white); border-bottom: 1px solid var(--g200); position: sticky; top: 0; z-index: 100; box-shadow: var(--sh); transition: box-shadow .2s; overflow: hidden; }
