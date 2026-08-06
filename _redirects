@@ -43,6 +43,11 @@
 /what-north-carolina-law-requires-septic-system-inspections/ /blog/what-nc-law-requires-septic-inspections.html 301
 /sitemap_index.xml /sitemap.xml 301
 
+# Blog posts removed without a live replacement — still indexed by Google
+# with real impressions as of the 2026-08-06 Search Console pull (404 otherwise).
+/blog/septic-system-installation-cost-union-county.html /services/septic-installation.html 301
+/blog/septic-tank-pumping-cost-monroe-nc.html /services/septic-pumping.html 301
+
 # Old-site utility pages
 /home / 301
 /septic-tank-services /#services 301

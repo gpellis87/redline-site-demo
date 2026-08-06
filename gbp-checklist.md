@@ -3,6 +3,8 @@
 Off-site work to pair with the on-site schema/entity changes. This is the highest-leverage lever for the "near me" pumping queries (they're won in the map pack, not organic).
 
 > **Status July 2026:** Profile setup is complete (all items below verified done). The ongoing work — reviews, posts, photos, citations — is now the entire game. GSC shows "near me" queries at position 11–20 organically; the map pack above those results is won by profile activity and review velocity, not the website.
+>
+> **Update 2026-08-06:** The most recent 7-day GSC pull shows several "near me" queries meaningfully worse than the 11–20 range above — e.g. `septic tank pump out near me` at position ~51, `septic tank cleaning near me` at ~40, `septic pumping near me` at ~15–19. Worth confirming whether the weekly posting/review cadence below has actually been running since this checklist was written, since the ranking trend doesn't match the "position 11–20" baseline it assumes. Treat this as a signal to re-check execution, not to rewrite the strategy — the diagnosis (map pack is won off-site) still holds.
 
 ## Profile setup — ✅ DONE
 - [ ] Primary category: **Septic system service**
