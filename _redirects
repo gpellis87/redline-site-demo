@@ -47,6 +47,58 @@
 # with real impressions as of the 2026-08-06 Search Console pull (404 otherwise).
 /blog/septic-system-installation-cost-union-county.html /services/septic-installation.html 301
 /blog/septic-tank-pumping-cost-monroe-nc.html /services/septic-pumping.html 301
+/blog/septic-tank-repair-cost-union-county.html /services/septic-repair.html 301
+
+# Legacy pre-migration URLs (old site, incl. a "Fairview" article series outside
+# the current service area) confirmed 404 via HEAD check against the 2026-08-06
+# 3-month Search Console export — many still carry real impressions/clicks.
+/about-us/ /about.html 301
+/privacy-policy/ /privacy-policy.html 301
+/thank-you/ / 301
+/category/septic-tank/ /blog/ 301
+/anson-county/ /locations/anson-county-nc.html 301
+/mecklenburg-county/ /locations/mecklenburg-county-nc.html 301
+/stanfield/ /services/septic-pumping.html 301
+/septic-inspections/ /services/septic-inspections.html 301
+/septic-system-installation/ /services/septic-installation.html 301
+/septic-tank-replacement/ /services/septic-tank-replacement.html 301
+/emergency-septic-repair/ /services/emergency-septic-repair.html 301
+/septic-repairs/ /services/septic-repair.html 301
+/porta-john/ /services/porta-john-rental.html 301
+/osha-portable-restroom-requirements-construction-union-county/ /services/porta-john-rental.html 301
+/site-preparation-mineral-springs-nc/ /services/drainage-excavation.html 301
+/what-north-carolina-regulations-say-about-septic-pumping-frequency/ /blog/septic-pumping-schedule-union-county.html 301
+/how-tree-root-intrusion-causes-sudden-septic-failures-trail-fairview/ /services/septic-line-repair.html 301
+/why-outlet-tee-replacement-most-common-septic-repairs/ /services/septic-repair.html 301
+/how-distribution-box-failure-causes-emergency-drain-field-problems/ /services/drain-field-repair.html 301
+/why-repair-area-designation-matters-during-septic-installation-nc/ /services/septic-installation.html 301
+/how-clay-soil-affects-septic-system-design-farm-willow-creek/ /services/septic-installation.html 301
+/what-first-time-homebuilders-fairview-should-know-septic-costs/ /services/septic-installation.html 301
+/what-permits-required-septic-installation-union-county-nc/ /services/septic-installation.html 301
+/why-proper-backfill-grading-matters-after-septic-installation/ /services/septic-installation.html 301
+
+# City-specific legacy combo pages that have a real /locations/ page but no
+# dedicated repair/pumping/maintenance/inspection combo page for that city
+/septic-tank-pumping-lake-park-nc/ /locations/lake-park-nc.html 301
+/septic-system-repair-lake-park-nc/ /locations/lake-park-nc.html 301
+/septic-system-repair-unionville-nc/ /locations/unionville-nc.html 301
+/septic-tank-pumping-unionville-nc/ /locations/unionville-nc.html 301
+/septic-system-maintenance-unionville-nc/ /locations/unionville-nc.html 301
+/septic-system-repair-mineral-springs-nc/ /locations/mineral-springs-nc.html 301
+/septic-system-inspection-midland-nc/ /locations/midland-nc.html 301
+/septic-tank-replacement-weddington-nc/ /locations/weddington-nc.html 301
+
+# City-specific legacy combo pages for towns with no dedicated location page
+# (Albemarle, Marshville, Fairview, Hemby Bridge aren't in the current
+# 17-city/4-county service-area list) — route to the matching general service
+/septic-tank-pumping-hemby-bridge-nc/ /services/septic-pumping.html 301
+/septic-system-repair-albemarle-nc/ /services/septic-repair.html 301
+/septic-tank-replacement-albemarle-nc/ /services/septic-tank-replacement.html 301
+/septic-system-maintenance-albemarle-nc/ /services/septic-maintenance.html 301
+/septic-system-inspection-marshville-nc/ /services/septic-inspections.html 301
+/septic-system-maintenance-marshville-nc/ /services/septic-maintenance.html 301
+/septic-system-repair-fairview-nc/ /services/septic-repair.html 301
+/septic-system-repair-hemby-bridge-nc/ /services/septic-repair.html 301
 
 # Old-site utility pages
 /home / 301
