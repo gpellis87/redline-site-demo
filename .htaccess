@@ -27,6 +27,7 @@ Redirect 301 /drainage-excavation/ https://redlinesiteservices.com/services/drai
 Redirect 301 /excavation-contractor/ https://redlinesiteservices.com/services/drainage-excavation.html
 RedirectMatch 301 ^/septic-tank-pumping/?$ https://redlinesiteservices.com/services/septic-pumping.html
 RedirectMatch 301 ^/septic-tank-cleaning/?$ https://redlinesiteservices.com/services/septic-tank-cleaning.html
+Redirect 301 /septic-pumping/ https://redlinesiteservices.com/services/septic-pumping.html
 
 # Old-site city/service combo pages (exact rule before wildcard)
 RedirectMatch 301 ^/septic-tank-installation-stallings-nc/?$ https://redlinesiteservices.com/septic-system-installation-stallings-nc/
@@ -42,6 +43,69 @@ Redirect 301 /septic-system-inspection-mineral-springs-nc/ https://redlinesitese
 Redirect 301 /septic-system-inspection-matthews-nc/ https://redlinesiteservices.com/locations/matthews-nc.html
 Redirect 301 /what-north-carolina-law-requires-septic-system-inspections/ https://redlinesiteservices.com/blog/what-nc-law-requires-septic-inspections.html
 Redirect 301 /sitemap_index.xml https://redlinesiteservices.com/sitemap.xml
+
+# Blog posts removed without a live replacement — still indexed by Google
+# with real impressions as of the 2026-08-06 Search Console pull (404 otherwise).
+Redirect 301 /blog/septic-system-installation-cost-union-county.html https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /blog/septic-tank-pumping-cost-monroe-nc.html https://redlinesiteservices.com/services/septic-pumping.html
+Redirect 301 /blog/septic-tank-repair-cost-union-county.html https://redlinesiteservices.com/services/septic-repair.html
+
+# Legacy pre-migration URLs (old site, incl. a "Fairview" article series outside
+# the current service area) confirmed 404 via HEAD check against the 2026-08-06
+# 3-month Search Console export — many still carry real impressions/clicks.
+Redirect 301 /about-us/ https://redlinesiteservices.com/about.html
+Redirect 301 /privacy-policy/ https://redlinesiteservices.com/privacy-policy.html
+Redirect 301 /thank-you/ https://redlinesiteservices.com/
+Redirect 301 /category/septic-tank/ https://redlinesiteservices.com/blog/
+Redirect 301 /anson-county/ https://redlinesiteservices.com/locations/anson-county-nc.html
+Redirect 301 /mecklenburg-county/ https://redlinesiteservices.com/locations/mecklenburg-county-nc.html
+Redirect 301 /stanfield/ https://redlinesiteservices.com/services/septic-pumping.html
+Redirect 301 /septic-inspections/ https://redlinesiteservices.com/services/septic-inspections.html
+Redirect 301 /septic-system-installation/ https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /septic-tank-replacement/ https://redlinesiteservices.com/services/septic-tank-replacement.html
+Redirect 301 /emergency-septic-repair/ https://redlinesiteservices.com/services/emergency-septic-repair.html
+Redirect 301 /septic-repairs/ https://redlinesiteservices.com/services/septic-repair.html
+Redirect 301 /porta-john/ https://redlinesiteservices.com/services/porta-john-rental.html
+Redirect 301 /osha-portable-restroom-requirements-construction-union-county/ https://redlinesiteservices.com/services/porta-john-rental.html
+Redirect 301 /site-preparation-mineral-springs-nc/ https://redlinesiteservices.com/services/drainage-excavation.html
+Redirect 301 /what-north-carolina-regulations-say-about-septic-pumping-frequency/ https://redlinesiteservices.com/blog/septic-pumping-schedule-union-county.html
+Redirect 301 /how-tree-root-intrusion-causes-sudden-septic-failures-trail-fairview/ https://redlinesiteservices.com/services/septic-line-repair.html
+Redirect 301 /why-outlet-tee-replacement-most-common-septic-repairs/ https://redlinesiteservices.com/services/septic-repair.html
+Redirect 301 /how-distribution-box-failure-causes-emergency-drain-field-problems/ https://redlinesiteservices.com/services/drain-field-repair.html
+Redirect 301 /why-repair-area-designation-matters-during-septic-installation-nc/ https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /how-clay-soil-affects-septic-system-design-farm-willow-creek/ https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /what-first-time-homebuilders-fairview-should-know-septic-costs/ https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /what-permits-required-septic-installation-union-county-nc/ https://redlinesiteservices.com/services/septic-installation.html
+Redirect 301 /why-proper-backfill-grading-matters-after-septic-installation/ https://redlinesiteservices.com/services/septic-installation.html
+
+# City-specific legacy combo pages that have a real /locations/ page but no
+# dedicated repair/pumping/maintenance/inspection combo page for that city
+Redirect 301 /septic-tank-pumping-lake-park-nc/ https://redlinesiteservices.com/locations/lake-park-nc.html
+Redirect 301 /septic-system-repair-lake-park-nc/ https://redlinesiteservices.com/locations/lake-park-nc.html
+Redirect 301 /septic-system-repair-unionville-nc/ https://redlinesiteservices.com/locations/unionville-nc.html
+Redirect 301 /septic-tank-pumping-unionville-nc/ https://redlinesiteservices.com/locations/unionville-nc.html
+Redirect 301 /septic-system-maintenance-unionville-nc/ https://redlinesiteservices.com/locations/unionville-nc.html
+Redirect 301 /septic-system-repair-mineral-springs-nc/ https://redlinesiteservices.com/locations/mineral-springs-nc.html
+Redirect 301 /septic-system-inspection-midland-nc/ https://redlinesiteservices.com/locations/midland-nc.html
+Redirect 301 /septic-tank-replacement-weddington-nc/ https://redlinesiteservices.com/locations/weddington-nc.html
+Redirect 301 /septic-system-repair-midland-nc/ https://redlinesiteservices.com/locations/midland-nc.html
+Redirect 301 /septic-tank-replacement-indian-trail-nc/ https://redlinesiteservices.com/locations/indian-trail-nc.html
+Redirect 301 /septic-tank-replacement-matthews-nc/ https://redlinesiteservices.com/locations/matthews-nc.html
+Redirect 301 /septic-system-repair-weddington-nc/ https://redlinesiteservices.com/locations/weddington-nc.html
+Redirect 301 /septic-system-maintenance-monroe-nc/ https://redlinesiteservices.com/locations/monroe-nc.html
+
+# City-specific legacy combo pages for towns with no dedicated location page
+# (Albemarle, Marshville, Fairview, Hemby Bridge aren't in the current
+# 17-city/4-county service-area list) — route to the matching general service
+Redirect 301 /septic-tank-pumping-hemby-bridge-nc/ https://redlinesiteservices.com/services/septic-pumping.html
+Redirect 301 /septic-system-repair-albemarle-nc/ https://redlinesiteservices.com/services/septic-repair.html
+Redirect 301 /septic-tank-replacement-albemarle-nc/ https://redlinesiteservices.com/services/septic-tank-replacement.html
+Redirect 301 /septic-system-maintenance-albemarle-nc/ https://redlinesiteservices.com/services/septic-maintenance.html
+Redirect 301 /septic-system-inspection-marshville-nc/ https://redlinesiteservices.com/services/septic-inspections.html
+Redirect 301 /septic-system-maintenance-marshville-nc/ https://redlinesiteservices.com/services/septic-maintenance.html
+Redirect 301 /septic-system-repair-fairview-nc/ https://redlinesiteservices.com/services/septic-repair.html
+Redirect 301 /septic-system-repair-hemby-bridge-nc/ https://redlinesiteservices.com/services/septic-repair.html
+Redirect 301 /septic-system-inspection-hemby-bridge-nc/ https://redlinesiteservices.com/services/septic-inspections.html
 
 # Old-site utility pages
 RedirectMatch 301 ^/home/?$ https://redlinesiteservices.com/

@@ -27,6 +27,7 @@
 /excavation-contractor/ /services/drainage-excavation.html 301
 /septic-tank-pumping/ /services/septic-pumping.html 301
 /septic-tank-cleaning/ /services/septic-tank-cleaning.html 301
+/septic-pumping/ /services/septic-pumping.html 301
 
 # Old-site city/service combo pages (exact rule before wildcard)
 /septic-tank-installation-stallings-nc/ /septic-system-installation-stallings-nc/ 301
@@ -87,6 +88,11 @@
 /septic-system-repair-mineral-springs-nc/ /locations/mineral-springs-nc.html 301
 /septic-system-inspection-midland-nc/ /locations/midland-nc.html 301
 /septic-tank-replacement-weddington-nc/ /locations/weddington-nc.html 301
+/septic-system-repair-midland-nc/ /locations/midland-nc.html 301
+/septic-tank-replacement-indian-trail-nc/ /locations/indian-trail-nc.html 301
+/septic-tank-replacement-matthews-nc/ /locations/matthews-nc.html 301
+/septic-system-repair-weddington-nc/ /locations/weddington-nc.html 301
+/septic-system-maintenance-monroe-nc/ /locations/monroe-nc.html 301
 
 # City-specific legacy combo pages for towns with no dedicated location page
 # (Albemarle, Marshville, Fairview, Hemby Bridge aren't in the current
@@ -99,6 +105,7 @@
 /septic-system-maintenance-marshville-nc/ /services/septic-maintenance.html 301
 /septic-system-repair-fairview-nc/ /services/septic-repair.html 301
 /septic-system-repair-hemby-bridge-nc/ /services/septic-repair.html 301
+/septic-system-inspection-hemby-bridge-nc/ /services/septic-inspections.html 301
 
 # Old-site utility pages
 /home / 301
