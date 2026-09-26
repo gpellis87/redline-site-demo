@@ -10,8 +10,8 @@ Off-site work to pair with the on-site schema/entity changes. This is the highes
 - [ ] Primary category: **Septic system service**
 - [ ] Secondary categories (as applicable): Septic tank plumber, Excavating contractor, Drainage service, Grading contractor
 - [ ] Business name matches site exactly: **Redline Site Services** (do not add keywords to the GBP name — against Google guidelines and risks suspension)
-- [ ] Add all 12 services to the GBP "Services" section, matching the site's service names:
-  Septic Tank Pumping, Emergency Septic Repair, Septic System Installation, Septic Inspections, Drain Field Repair, Septic Tank Cleaning, Septic Tank Replacement, Septic Maintenance, Septic Line Repair, Drainage & Excavation, Porta John Rental
+- [ ] Add all 10 services to the GBP "Services" section, matching the site's service names:
+  Emergency Septic Repair, Septic System Installation, Septic Inspections, Drain Field Repair, Septic Tank Replacement, Septic Maintenance, Septic Line Repair, Septic Repair, Drainage & Excavation, Porta John Rental
 - [ ] Service area set to the 17 city pages + 4 counties (match `locations/` exactly): Monroe, Charlotte, Indian Trail, Waxhaw, Matthews, Mint Hill, Wesley Chapel, Stallings, Concord, Kannapolis, Harrisburg, Huntersville, Midland, Lake Park, Mineral Springs, Weddington, Marvin, Unionville; Union/Cabarrus/Mecklenburg/Anson Counties
 - [ ] Website link → https://redlinesiteservices.com/
 - [ ] Phone matches exactly: (704) 562-9922
@@ -25,10 +25,8 @@ Off-site work to pair with the on-site schema/entity changes. This is the highes
 
 ## GBP Q&A seeding
 Seed the Q&A section with the same questions already answered in the site's FAQPage schema (keeps GBP and site answers consistent, which helps entity matching):
-- How often should I have my septic tank pumped?
 - What are the warning signs of a failing septic system?
 - Do I need a septic inspection when buying a home in Union County?
-- What's the difference between septic pumping and tank cleaning?
 - What should I do during a septic emergency?
 
 ## Ongoing

@@ -1,18 +1,17 @@
 # Redline Site Services legacy SEO redirects for static hosts that support _redirects.
 # First match wins — keep exact rules above wildcard rules.
-# /septic-tank-pumping-indian-trail-nc/ is intentionally NOT redirected —
-# a real landing page now lives at that path.
+# /septic-tank-pumping-indian-trail-nc/ — page removed 2026-09-26, redirected below.
 
 /our-services/ /#services 301
 /contact-us/ /#contact 301
 /union-county/ /locations/union-county-nc.html 301
-/septic-tank-pumping-monroe-nc/ /services/septic-pumping.html 301
-/septic-tank-pumping-albemarle-nc/ /services/septic-pumping.html 301
-/septic-tank-pumping-stanfield-nc/ /services/septic-pumping.html 301
-/how-much-does-it-cost-to-pump-a-septic-tank/ /blog/septic-pumping-schedule-union-county.html 301
+/septic-tank-pumping-monroe-nc/ /services/septic-maintenance.html 301
+/septic-tank-pumping-albemarle-nc/ /services/septic-maintenance.html 301
+/septic-tank-pumping-stanfield-nc/ /services/septic-maintenance.html 301
+/how-much-does-it-cost-to-pump-a-septic-tank/ /blog/warning-signs-septic-system.html 301
 /what-happens-if-you-never-pump-your-septic-tank/ /blog/warning-signs-septic-system.html 301
 /what-to-do-when-your-septic-system-backs-up/ /services/emergency-septic-repair.html 301
-/how-often-fairview-nc-homes-need-septic-tank-pumping/ /blog/septic-pumping-schedule-union-county.html 301
+/how-often-fairview-nc-homes-need-septic-tank-pumping/ /blog/warning-signs-septic-system.html 301
 /how-skipping-septic-pumping-leads-emergencies-wallace-road/ /blog/warning-signs-septic-system.html 301
 /what-causes-riser-lid-damage-septic-tanks-fairview-nc/ /services/septic-repair.html 301
 /terms-and-conditions/ /terms-and-conditions/ 410
@@ -25,9 +24,9 @@
 /drainage-management/ /services/drainage-excavation.html 301
 /drainage-excavation/ /services/drainage-excavation.html 301
 /excavation-contractor/ /services/drainage-excavation.html 301
-/septic-tank-pumping/ /services/septic-pumping.html 301
-/septic-tank-cleaning/ /services/septic-tank-cleaning.html 301
-/septic-pumping/ /services/septic-pumping.html 301
+/septic-tank-pumping/ /services/septic-maintenance.html 301
+/septic-tank-cleaning/ /services/septic-maintenance.html 301
+/septic-pumping/ /services/septic-maintenance.html 301
 
 # Old-site city/service combo pages (exact rule before wildcard)
 /septic-tank-installation-stallings-nc/ /septic-system-installation-stallings-nc/ 301
@@ -47,7 +46,7 @@
 # Blog posts removed without a live replacement — still indexed by Google
 # with real impressions as of the 2026-08-06 Search Console pull (404 otherwise).
 /blog/septic-system-installation-cost-union-county.html /services/septic-installation.html 301
-/blog/septic-tank-pumping-cost-monroe-nc.html /services/septic-pumping.html 301
+/blog/septic-tank-pumping-cost-monroe-nc.html /services/septic-maintenance.html 301
 /blog/septic-tank-repair-cost-union-county.html /services/septic-repair.html 301
 
 # Legacy pre-migration URLs (old site, incl. a "Fairview" article series outside
@@ -59,7 +58,7 @@
 /category/septic-tank/ /blog/ 301
 /anson-county/ /locations/anson-county-nc.html 301
 /mecklenburg-county/ /locations/mecklenburg-county-nc.html 301
-/stanfield/ /services/septic-pumping.html 301
+/stanfield/ /services/septic-maintenance.html 301
 /septic-inspections/ /services/septic-inspections.html 301
 /septic-system-installation/ /services/septic-installation.html 301
 /septic-tank-replacement/ /services/septic-tank-replacement.html 301
@@ -68,7 +67,7 @@
 /porta-john/ /services/porta-john-rental.html 301
 /osha-portable-restroom-requirements-construction-union-county/ /services/porta-john-rental.html 301
 /site-preparation-mineral-springs-nc/ /services/drainage-excavation.html 301
-/what-north-carolina-regulations-say-about-septic-pumping-frequency/ /blog/septic-pumping-schedule-union-county.html 301
+/what-north-carolina-regulations-say-about-septic-pumping-frequency/ /blog/warning-signs-septic-system.html 301
 /how-tree-root-intrusion-causes-sudden-septic-failures-trail-fairview/ /services/septic-line-repair.html 301
 /why-outlet-tee-replacement-most-common-septic-repairs/ /services/septic-repair.html 301
 /how-distribution-box-failure-causes-emergency-drain-field-problems/ /services/drain-field-repair.html 301
@@ -97,7 +96,7 @@
 # City-specific legacy combo pages for towns with no dedicated location page
 # (Albemarle, Marshville, Fairview, Hemby Bridge aren't in the current
 # 17-city/4-county service-area list) — route to the matching general service
-/septic-tank-pumping-hemby-bridge-nc/ /services/septic-pumping.html 301
+/septic-tank-pumping-hemby-bridge-nc/ /services/septic-maintenance.html 301
 /septic-system-repair-albemarle-nc/ /services/septic-repair.html 301
 /septic-tank-replacement-albemarle-nc/ /services/septic-tank-replacement.html 301
 /septic-system-maintenance-albemarle-nc/ /services/septic-maintenance.html 301
@@ -110,3 +109,16 @@
 # Old-site utility pages
 /home / 301
 /septic-tank-services /#services 301
+
+# Pages removed 2026-09-26 — business no longer offers septic pumping/tank cleaning (sold the pump truck)
+/services/septic-pumping.html /services/septic-maintenance.html 301
+/services/septic-tank-cleaning.html /services/septic-maintenance.html 301
+/septic-tank-pumping-charlotte-nc/ /septic-system-repair-charlotte-nc/ 301
+/septic-tank-pumping-indian-trail-nc/ /septic-system-repair-indian-trail-nc/ 301
+/septic-tank-pumping-matthews-nc/ /septic-system-repair-matthews-nc/ 301
+/septic-tank-pumping-stallings-nc/ /locations/stallings-nc.html 301
+/septic-tank-pumping-waxhaw-nc/ /septic-system-installation-waxhaw-nc/ 301
+/septic-tank-pumping-wesley-chapel-nc/ /septic-system-repair-wesley-chapel-nc/ 301
+/blog/septic-pumping-schedule-union-county.html /blog/warning-signs-septic-system.html 301
+/blog/emergency-septic-pumping-union-county.html /blog/warning-signs-septic-system.html 301
+/blog/septic-tank-cleaning-vs-pumping.html /blog/septic-tank-repair-guide.html 301
